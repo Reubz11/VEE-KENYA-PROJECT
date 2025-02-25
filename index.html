@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEE Kenya - Empowering Communities</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Empowering Villages Through Sustainable Programs</h1>
+            <p>VEE Kenya focuses on uplifting communities through education, farming, and economic support.</p>
+            <a href="#projects" class="hero-btn">Explore Our Projects</a>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>Our Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-aos="fade-up">
+                <img src="assets/farming.jpg" alt="Farming Project">
+                <h3>Farming Project</h3>
+                <p>Empowering local farmers with sustainable practices.</p>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/education.jpg" alt="Education Project">
+                <h3>Education Support</h3>
+                <p>Providing educational resources to rural students.</p>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/health.jpg" alt="Health Project">
+                <h3>Health Initiatives</h3>
+                <p>Improving community health with local resources.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" class="donation-section" data-aos="fade-left">
+        <h2>Support Our Mission</h2>
+        <p>Your contributions will help us create lasting change.</p>
+        <div id="donation-tracker">
+            <p>Total Donations: <span id="total-donations">$0</span></p>
+            <button class="donate-btn" onclick="updateDonations(50)">Donate $50</button>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section" data-aos="fade-up">
+        <h2>What Our Community Says</h2>
+        <div class="testimonial">
+            <p>"VEE Kenya has truly transformed our village with its farming initiatives."</p>
+            <h4>- Farmer John</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Thanks to VEE Kenya, our children now have access to better education."</p>
+            <h4>- Parent Mary</h4>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <p>Email: info@veekenya.org</p>
+    </section>
+
+    <script src="js/scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            AOS.init();
+        });
+    </script>
+</body>
+
+</html>
