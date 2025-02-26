@@ -1,111 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VEE Kenya - Empowering Communities</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <title>VEE Kenya</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #004d40;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        #hero {
+            background: url('images/hero-image.jpg') no-repeat center center/cover;
+            text-align: center;
+            padding: 100px 20px;
+            color: white;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #00897b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .project {
+            background: white;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #004d40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-
 <body>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">VEE Kenya</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="impact.html">Impact</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="donate.html" class="donate-btn">Donate</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <header>
+        <nav>
+            <div class="logo">VEE Kenya</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#portal">Portals</a></li>
             </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero-section" id="home">
-        <div class="hero-content" data-aos="fade-up">
-            <h1>Empowering Villages Through Sustainable Programs</h1>
-            <p>VEE Kenya focuses on uplifting communities through education, farming, and economic support.</p>
-            <a href="#projects" class="hero-btn">Explore Our Projects</a>
-        </div>
+        </nav>
     </header>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2 data-aos="fade-up">Our Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card" data-aos="fade-up">
-                    <img src="assets/farming.jpg" alt="Farming Project">
-                    <h3>Farming Project</h3>
-                    <p>Empowering local farmers with sustainable practices.</p>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/education.jpg" alt="Education Project">
-                    <h3>Education Support</h3>
-                    <p>Providing educational resources to rural students.</p>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/health.jpg" alt="Health Project">
-                    <h3>Health Initiatives</h3>
-                    <p>Improving community health with local resources.</p>
-                </div>
-            </div>
+    
+    <section id="hero">
+        <h1>Empowering Villages, Transforming Lives</h1>
+        <p>Join us in creating sustainable economic opportunities for communities.</p>
+        <a href="#projects" class="btn">Learn More</a>
+    </section>
+    
+    <section id="about">
+        <h2>About VEE Kenya</h2>
+        <p>Village Economic Empowerment (VEE Kenya) is dedicated to improving livelihoods through community-driven initiatives.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="project">
+            <h3>Kinale Community Farm</h3>
+            <p>Supporting local farmers with training and market access.</p>
+        </div>
+        <div class="project">
+            <h3>Karangatha Initiative</h3>
+            <p>Empowering youth and women through agribusiness.</p>
         </div>
     </section>
-
-    <!-- Donation Section -->
-    <section id="donate" class="donation-section" data-aos="fade-left">
-        <div class="container">
-            <h2>Support Our Mission</h2>
-            <p>Your contributions will help us create lasting change.</p>
-            <div id="donation-tracker">
-                <p>Total Donations: <span id="total-donations">$0</span></p>
-                <button class="donate-btn" onclick="updateDonations(50)">Donate $50</button>
-            </div>
-        </div>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@veekenya.org</p>
+        <p>Phone: +254 700 000 000</p>
     </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials-section" data-aos="fade-up">
-        <div class="container">
-            <h2>What Our Community Says</h2>
-            <div class="testimonial">
-                <p>"VEE Kenya has truly transformed our village with its farming initiatives."</p>
-                <h4>- Farmer John</h4>
-            </div>
-            <div class="testimonial">
-                <p>"Thanks to VEE Kenya, our children now have access to better education."</p>
-                <h4>- Parent Mary</h4>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section" data-aos="fade-up">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Email: info@veekenya.org</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <foo
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="farmers-portal.html">Farmers Portal</a></li>
-        <li><a href="admin-portal.html">Admin Portal</a></li>
-        <li><a href="students-portal.html">Students Portal</a></li>
-    </ul>
-</nav>
+    
+    <footer>
+        <p>&copy; 2025 VEE Kenya. All rights reserved.</p>
+    </footer>
+</body>
+</html>
